@@ -6,113 +6,84 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Web Master Template</title>
+    <title>Celebrities</title>
   </head>
   <body class="container">
-    <h1>Master Web Tamplate</h1>
-    <nav>
-      <h1>Navs</h1>
-      <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Home</a></li>
-        <li role="presentation"><a href="#">Profile</a></li>
-        <li role="presentation"><a href="#">Messages</a></li>
-      </ul>
-    </nav>
+    <h1>Celebrity Dating</h1>
     <main class="">
-      <h1>Main</h1>
-      <div class="panel">
-        <h1>Panel</h1>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Panel title</h3>
-          </div>
-          <div class="panel-body">
-            Panel content
-          </div>
-          <div class="panel-footer">
-            Panel Footer
-          </div>
-        </div>
-      </div>
-      <div class="well">
-        <h1>Well</h1>
-      </div>
-      <div class="panel">
-        <h1>List Group</h1>
-        <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-      </div>
       <div class="row">
         <div class="panel">
           <form id="form1">
             <h1>Form 1</h1>
-            <div class="form-group has-success">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-              <span class="error">fa fa-times</span>
-            </div>
-            <div class="form-group has-warning">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group has-error has-feedback">
-              <label for="number">Number</label>
-              <input type="number" class="form-control" id="number1" placeholder="number">
-            </div>
             <div class="form-group">
-              <select class="form-control">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+              <label for="user-gender">Gender</label>
+              <select id="user-gender" class="form-control">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="both">Both</option>
               </select>
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="3" placeholder="Text"></textarea>
+              <label for="user-height">Height</label>
+              <select id="user-height" class="form-control">
+                <option value="tall">Tall</option>
+                <option value="average">Average</option>
+                <option value="short">Short</option>
+              </select>
             </div>
             <div class="form-group">
-              <label for="exampleInputFile">File input</label>
-              <input type="file" id="exampleInputFile">
-              <p class="help-block">Example block-level help text here.</p>
+              <label for="user-hair">Hair</label>
+              <select id="user-hair" class="form-control">
+                <option value="blonde">Blonde</option>
+                <option value="brown">Brown</option>
+                <option value="black">Black</option>
+                <option value="Red">Red</option>
+                <option value="Bald">Bald</option>
+              </select>
             </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Check me out
-              </label>
+            <div class="form-group">
+              <label for="user-weight">Weight</label>
+              <select id="user-weight" class="form-control">
+                <option value="heavy">Heavy</option>
+                <option value="fit">Fit</option>
+                <option value="average">Average</option>
+                <option value="fat">Fat</option>
+              </select>
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
           </form>
         </div>
       </div>
+      <div id="celebrity" class="celebrities">
+        <div class="results">
+            <h1>Your Results</h1>
+            <h2 class="gender"></h2>
+            <h2 class="hair"></h2>
+            <h2 class="height"></h2>
+            <h2 class="weight"></h2>
+        </div>
+
+        <div id="celebrity1" class="celebrities">
+          <h2>Bill Murray 1</h2>
+          <img src="img/bill_murray.jpg">
+        </div>
+        <div id="celebrity2" class="celebrities">
+          <h2>Bill Murray 2</h2>
+          <img src="img/bill_murray.jpg">
+        </div>
+        <div id="celebrity3" class="celebrities">
+          <h2>Bill Murray 3</h2>
+          <img src="img/bill_murray.jpg">
+        </div>
+        <div id="celebrity4" class="celebrities">
+          <h2>Bill Murray 4</h2>
+          <img src="img/bill_murray.jpg">
+        </div>
+        <div id="celebrity5" class="celebrities">
+          <h2>Bill Murray 5</h2>
+          <img src="img/bill_murray.jpg">
+        </div>
+      </div>
     </main>
-    <footer class="">
-      <h1>Footer</h1>
-      <div class="col-md-4 panel">
-        <h1>Footer Panel</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="col-md-4 panel">
-        <h1>Social Media</h1>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-      </div>
-      <div class="col-md-4 panel">
-        <h1>Footer Nav</h1>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-      </div>
-    </footer>
   </body>
 </html>
